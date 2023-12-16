@@ -6,7 +6,28 @@
     <title>Trinkgeld Rechner</title>
 </head>
 <body>
-    
+    <section>
+        <h1></h1>
+        <form action="" onsubmit="zahlen(); return false">
+            <label for="rechnung">WIe hoch war die Rechnung</label>
+            <input type="number" name="rechnung" id="rechnung">
+            <label for="teilen">Wie viele Menschen teilen sich die Rechnung</label>
+            <input type="number" name="teilen" id="teilen">
+            <select name="trinkgeld" id="trinkgeld">
+                <option value="0">Wie war der Service</option>
+                <option value="1">Kein Tip</option>
+                <option value="2">5 % Tip</option>
+                <option value="3">10 % Tip</option>
+                <option value="4">15 % Tip</option>
+            </select>
+            <input type="submit" value="Berechne">
+        </form>
+        <div>
+            <p class="outputTip"></p>
+            <p class="outputRechnung"></p>
+            <p class="outputTeilen"></p>
+        </div>
+    </section>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
